@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqil5jpwc3pvf"]
+
+[ext_resource type="Script" path="res://Script/start_menu.gd" id="1_fdex1"]
+[ext_resource type="Texture2D" uid="uid://b5tlmgyrjc3c0" path="res://Image/BG/Универ.png" id="2_63ytc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tt7dl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_skhq5"]
+
+[node name="Start menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fdex1")
+
+[node name="Универ" type="Sprite2D" parent="."]
+position = Vector2(504, 480)
+scale = Vector2(0.39, 0.39)
+texture = ExtResource("2_63ytc")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 401.0
+offset_right = 575.0
+offset_bottom = 468.0
+
+[node name="Старт" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tt7dl")
+text = "Запустить"
+
+[node name="Конец" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_skhq5")
+text = "Выключить"
+
+[connection signal="pressed" from="VBoxContainer/Старт" to="." method="_on_старт_pressed"]
+[connection signal="pressed" from="VBoxContainer/Конец" to="." method="_on_конец_pressed"]

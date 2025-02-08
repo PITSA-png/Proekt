@@ -1,0 +1,8 @@
+[voice volume="0.0"]
+[background arg="res://Image/BG/Лестница.png" fade="0.0"]
+GG: Ебучие лестницы
+[background arg="res://Image/BG/Вход в кабинет.png" fade="0.0"]
+join Student (Classic) left
+Student (Classic): Ну что готов к практике?
+GG: Какой практике?
+Student: Пиздатой практике

@@ -26,10 +26,13 @@ directories/dch_directory={
 "Student": "res://Person/Student.dch"
 }
 directories/dtl_directory={
+"0_act": "res://Timeline/0_act.dtl",
 "1_act": "res://Timeline/1_act.dtl",
 "2_act": "res://Timeline/2_act.dtl",
+"Budilnik": "res://Image/Budilnik.dtl",
 "Fish_moment": "res://Timeline/Fish_moment.dtl",
-"Start": "res://Timeline/Start.dtl"
+"Start": "res://Timeline/Start.dtl",
+"doska_moment": "res://Timeline/doska_moment.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -62,11 +65,6 @@ window/size/viewport_width=1024
 window/size/viewport_height=960
 window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_width"
-
-[editor]
-
-version_control/plugin_name="GitPlugin"
-version_control/autoload_on_startup=true
 
 [editor_plugins]
 

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqkign1yla7p0"]
+
+[ext_resource type="Texture2D" path="res://Image/BG/комната.jpg" id="1_yy32b"]
+
+[node name="0_act" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Комната" type="Sprite2D" parent="."]
+position = Vector2(653, 484.975)
+scale = Vector2(1.7, 1.88314)
+texture = ExtResource("1_yy32b")

@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://cnx3gehxd0o5l"]
+[gd_scene load_steps=3 format=3 uid="uid://cnx3gehxd0o5l"]
+
+[ext_resource type="Script" path="res://Scence/3_act.gd" id="1_xfr5q"]
+[ext_resource type="Texture2D" uid="uid://bj2unx5juknxa" path="res://Image/BG/Вход в кабинет.png" id="1_y6i8a"]
 
 [node name="3_act" type="Control"]
 layout_mode = 3
@@ -7,14 +10,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xfr5q")
 
-[node name="Label" type="Label" parent="."]
+[node name="ВходВКабинет" type="Sprite2D" parent="."]
+position = Vector2(525, 470)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_y6i8a")
+
+[node name="Доска" type="Button" parent="."]
 layout_mode = 0
-offset_left = 229.0
-offset_top = 298.0
-offset_right = 725.0
-offset_bottom = 593.0
-theme_override_font_sizes/font_size = 100
-text = "Game over!"
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_left = 119.0
+offset_top = 288.0
+offset_right = 386.0
+offset_bottom = 876.0
+
+[connection signal="pressed" from="Доска" to="." method="_on_доска_pressed"]
